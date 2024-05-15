@@ -17,7 +17,6 @@ public class ProcessoSeletivo {
 
     // Método para entrar com Contato com o Candidato
     static void entrandoEmContato(String candidato){
-        String [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO"};
         int tentativasRealizadas = 1;
         boolean continuarTentando = true;
         boolean atendeu=false;
@@ -31,7 +30,7 @@ public class ProcessoSeletivo {
 
         }while(continuarTentando && tentativasRealizadas < 3);
         if (atendeu) {
-            System.out.println("O candidato "+ candidato +" foi atendido em "+tentativasRealizadas+" tentativas");
+            System.out.println("O candidato " + candidato +" foi atendido em " + tentativasRealizadas + " tentativas");
         } else 
             System.out.println("Não conseguimos contato com " + candidato + " Número máximo de tentativas " + tentativasRealizadas);
     }
